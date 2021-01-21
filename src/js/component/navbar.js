@@ -1,6 +1,10 @@
+import Logo from '../../images/logo2.jpg';
+
 const navbar = () => {
   const nav = document.createElement('nav');
   const navbarBrand = document.createElement('a');
+  const brandImage = document.createElement('img');
+  // const brandImage = new Image(Logo);
 
   const toggleButton = document.createElement('button');
   const toggleButtonSpan = document.createElement('span');
@@ -45,8 +49,11 @@ const navbar = () => {
   toggleButton.setAttribute('aria-controls', "navbarSupportedContent");
   toggleButton.setAttribute('aria-expanded', "false");
   toggleButton.setAttribute('aria-label', "Toggle navigation");
+  brandImage.src = Logo;
 
-  navbarBrand.textContent = 'Popoyes';
+  // navbarBrand.textContent = 'Popoyes';
+  navbarBrand.appendChild(brandImage);
+
   navHomeA.textContent = 'Home';
   navMenuA.textContent = 'Menu';
   navContactA.textContent = 'Contact';
