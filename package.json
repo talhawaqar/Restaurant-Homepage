@@ -1,0 +1,38 @@
+{
+  "name": "restaurant-homepage",
+  "version": "1.0.0",
+  "description": "It is a resturant homepage which shows it's menu build by using js.",
+  "private": true,
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talhawaqar/Restaurant-Homepage.git"
+  },
+  "keywords": [
+    "Restruant",
+    "Popeyes",
+    "microverse",
+    "js",
+    "webpack"
+  ],
+  "author": "Muhammad Talha Waqar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/talhawaqar/Restaurant-Homepage/issues"
+  },
+  "homepage": "https://github.com/talhawaqar/Restaurant-Homepage#readme",
+  "devDependencies": {
+    "css-loader": "^5.0.1",
+    "sass": "^1.32.5",
+    "sass-loader": "^10.1.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.17.0",
+    "webpack-cli": "^4.4.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}
