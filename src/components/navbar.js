@@ -75,6 +75,17 @@ const navbar = () => {
   nav.appendChild(toggleButton);
   nav.appendChild(navUlDiv);
 
+  navHomeA.addEventListener('click', ()=>{
+
+  });
+
+  navMenuA.addEventListener('click', ()=> {
+
+  });
+
+  navContactA.addEventListener('click', ()=>{
+
+  });
   return nav;
 };
 
