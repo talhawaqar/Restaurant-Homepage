@@ -4,8 +4,7 @@
   "description": "It is a resturant homepage which shows it's menu build by using js.",
   "private": true,
   "scripts": {
-    "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
