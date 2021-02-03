@@ -35,28 +35,28 @@ const navbar = () => {
 
   navHomeLi.classList.add('nav-item', 'active');
   navHomeA.classList.add('nav-link');
-  navHomeA.style.cssText = "font-size: 20px !important; cursor: pointer;";
+  navHomeA.style.cssText = 'font-size: 20px !important; cursor: pointer;';
 
   navMenuLi.classList.add('nav-item');
   navMenuA.classList.add('nav-link');
-  navMenuA.style.cssText = "font-size: 20px !important; cursor: pointer;";
+  navMenuA.style.cssText = 'font-size: 20px !important; cursor: pointer;';
 
   navContactLi.classList.add('nav-item');
   navContactA.classList.add('nav-link');
-  navContactA.style.cssText = "font-size: 20px !important; cursor: pointer;";
+  navContactA.style.cssText = 'font-size: 20px !important; cursor: pointer;';
 
   navUlDiv.id = 'navbarSupportedContent';
   navHomeA.id = 'home';
   navMenuA.id = 'menu';
   navContactA.id = 'contact';
 
-  toggleButton.setAttribute('data-toggle', "collapse");
-  toggleButton.setAttribute('data-target', "#navbarSupportedContent");
-  toggleButton.setAttribute('aria-controls', "navbarSupportedContent");
-  toggleButton.setAttribute('aria-expanded', "false");
-  toggleButton.setAttribute('aria-label', "Toggle navigation");
+  toggleButton.setAttribute('data-toggle', 'collapse');
+  toggleButton.setAttribute('data-target', '#navbarSupportedContent');
+  toggleButton.setAttribute('aria-controls', 'navbarSupportedContent');
+  toggleButton.setAttribute('aria-expanded', 'false');
+  toggleButton.setAttribute('aria-label', 'Toggle navigation');
   brandImage.src = Logo;
-  brandImage.style.cssText = "width:150px";
+  brandImage.style.cssText = 'width:150px';
   navbarBrand.appendChild(brandImage);
 
   navHomeA.textContent = 'Home';
@@ -79,7 +79,7 @@ const navbar = () => {
   nav.appendChild(toggleButton);
   nav.appendChild(navUlDiv);
 
-  navHomeA.addEventListener('click', ()=>{
+  navHomeA.addEventListener('click', () => {
     content.innerHTML = '';
     navHomeLi.classList.add('active');
     navMenuLi.classList.remove('active');
@@ -87,7 +87,7 @@ const navbar = () => {
     content.appendChild(home());
   });
 
-  navMenuA.addEventListener('click', ()=> {
+  navMenuA.addEventListener('click', () => {
     content.innerHTML = '';
     navHomeLi.classList.remove('active');
     navMenuLi.classList.add('active');
@@ -95,7 +95,7 @@ const navbar = () => {
     content.appendChild(menu());
   });
 
-  navContactA.addEventListener('click', ()=>{
+  navContactA.addEventListener('click', () => {
     content.innerHTML = '';
     navHomeLi.classList.remove('active');
     navMenuLi.classList.remove('active');
