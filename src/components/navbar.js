@@ -1,6 +1,10 @@
 import Logo from '../images/logo.png';
+import home from './home';
+import menu from './menu';
+import contact from './contact';
 
 const navbar = () => {
+  const content = document.getElementById('content');
   const nav = document.createElement('nav');
   const navbarBrand = document.createElement('a');
   const brandImage = document.createElement('img');
@@ -76,15 +80,27 @@ const navbar = () => {
   nav.appendChild(navUlDiv);
 
   navHomeA.addEventListener('click', ()=>{
-
+    content.innerHTML = '';
+    navHomeLi.classList.add('active');
+    navMenuLi.classList.remove('active');
+    navContactLi.classList.remove('active');
+    content.appendChild(home());
   });
 
   navMenuA.addEventListener('click', ()=> {
-
+    content.innerHTML = '';
+    navHomeLi.classList.remove('active');
+    navMenuLi.classList.add('active');
+    navContactLi.classList.remove('active');
+    content.appendChild(menu());
   });
 
   navContactA.addEventListener('click', ()=>{
-
+    content.innerHTML = '';
+    navHomeLi.classList.remove('active');
+    navMenuLi.classList.remove('active');
+    navContactLi.classList.add('active');
+    content.appendChild(contact());
   });
   return nav;
 };

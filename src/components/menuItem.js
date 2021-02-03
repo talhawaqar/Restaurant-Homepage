@@ -18,7 +18,7 @@ const menuItem = (menuImage, menuTitle, menuDescription) => {
   
   menuHeading.style.cssText = "font-size:30px;";
   card.style.cssText = "width: 18rem; background: rgba(100, 200, 100, 0.7) !important;";
-  cardImg.style.cssText = "height: 150px";
+  cardImg.style.cssText = "height: 180px";
 
   cardBody.appendChild(menuHeading);
   cardBody.appendChild(menuDes);
