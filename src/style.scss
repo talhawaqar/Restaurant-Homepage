@@ -1,0 +1,14 @@
+@import "bootstrap";
+
+.navbar-dark {
+  background-color: rgba(100, 200, 100, 0.7) !important;
+}
+
+body {
+  background-color: black;
+}
+
+.hero {
+  background: url(./images/hero-bg.jpg);
+  background-size: cover;
+}
